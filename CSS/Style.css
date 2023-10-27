@@ -1,36 +1,47 @@
-﻿
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     background-color: #f5f5f5;
 }
 
-img{
-    padding-top: 0.5em;
-    width: 10%;
+header {
+    overflow: hidden; /* Establece un contexto para flotar los elementos internos */
 }
 
-nav{
-    background-color: lightsteelblue;
+.logo-left {
+    float: left;
+    width: 20%; /* Ancho de la imagen izquierda */
+    margin-left: 1em; /* Añade margen a la izquierda para separarla del borde de la ventana */
+}
+
+.logo-right {
+    float: right;
+    width: 20%; /* Ancho de la imagen derecha */
+    margin-right: 1em; /* Añade margen a la izquierda para separarla del borde de la ventana */
+    margin-top: 6%; /* Añade margen a la parte superior para separarla del borde de la ventana */
+}
+
+nav {
+    background-color: #374E8E;
     text-align: center;
 }
 
-nav a{
-    color: #FFF;
-    display: inline-block;
-    padding: 0.5em;
-    text-decoration: none;
-}
+    nav a {
+        color: #FFF;
+        display: inline-block;
+        padding: 0.5em;
+        text-decoration: none;
+    }
 
-nav a:hover{
-    color: tomato;
-}
+        nav a:hover {
+            color: red;
+        }
 
 section {
     float: left;
@@ -39,32 +50,39 @@ section {
     width: 60%;
 }
 
-article{
+article {
     border: 1px solid #CCC;
     margin-top: 0.5em;
     padding: 1em;
 }
 
-p{
+p {
     text-align: justify;
 }
 
 aside {
     background-color: lightgray;
-    float: left;
-    height: auto;
+    display: flex;
     margin-top: 0.5em;
     padding: 1em;
-    width: 35.5%;
+    width: 37.5%;
+    align-items: center;
+    justify-content: center;
+    height: 200px; /* Establece la altura deseada del área del aside */
 }
 
-footer{
-    background-color: steelblue;
+/* Estilos para la imagen GIF dentro del aside */
+.gift-aside {
+    max-width: 100%; /* Asegura que la imagen no se desborde del área del aside */
+    max-height: 100%; /* Asegura que la imagen no se desborde del área del aside */
+}
+
+footer {
+    background-color: #374E8E;
     bottom: 0;
-    float: left;
     padding: 1em 0 1em 0;
     position: fixed;
-    width: 100%; 
+    width: 100%;
 }
 
     footer p {
