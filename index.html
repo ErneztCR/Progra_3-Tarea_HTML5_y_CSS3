@@ -1,47 +1,69 @@
 ﻿<!DOCTYPE html>
 <html lang="es"> 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Tarea HTML5 y CSS3</title>
-    <link rel="stylesheet" href="css/Style.css" />
-    <meta name="description" content="Tarea HTML5 y CSS3" />
-    <meta name="author" content="Ernesto Vargas" />
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/Style.css">
+    <meta name="description" content="Tarea HTML5 y CSS3">
+    <meta name="author" content="Ernesto Vargas">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 
 <body>
-    <!-- Cabecera del documento -->
+    <!-- Encabezado -->
     <header>
-
-        <img class="logo-left" src="img/nissan-logo.png" />
-        <img class="logo-right" src="img/patrol-logo.png" />
-
+        <img class="logo-left" src="img/nissan-logo.png" alt="Logo de Nissan a la izquierda">
+        <img class="logo-right" src="img/patrol-logo.png" alt="Logo de Patrol a la derecha">
     </header>
 
-    <!-- Barra de navegacion -->
+    <!-- Barra de navegación -->
     <nav>
         <a href="https://en.wikipedia.org/wiki/Nissan_Patrol"> Wikipedia</a>
-        <a href="https://en.nissan-dubai.com/motorshow/gazelle.html"> Nissan Pagina oficial</a>
+        <a href="https://en.nissan-dubai.com/motorshow/gazelle.html"> Nissan Página oficial</a>
         <a href="https://www.youtube.com/watch?v=KLqaHwSAXAE"> Review en YouTube</a>
     </nav>
 
     <!-- Contenido principal de la pagina -->
     <section>
-        <article> 
-            <p>El Nissan Patrol es un automóvil todoterreno con tracción en las cuatro ruedas, 
-            producido por el fabricante japonés Nissan en Japón desde el año 1951 hasta la fecha. 
-            El Patrol se vende especialmente en los mercados de Australia, Nueva Zelanda, 
-            América Central, Sudamérica, Sudáfrica, Europa y el Oriente Medio. 
-            Su rival directo es el Toyota Land Cruiser..</p>
+        <article>
+            <p>
+                El Nissan Patrol es un automóvil todoterreno con tracción en las cuatro ruedas,
+                producido por el fabricante japonés Nissan en Japón desde el año 1951 hasta la fecha.
+                El Patrol se vende especialmente en los mercados de Australia, Nueva Zelanda,
+                América Central, Sudamérica, Sudáfrica, Europa y el Oriente Medio.
+                Su rival directo es el Toyota Land Cruiser..
+            </p>
         </article>
-        <article> 
-            <p>Aca hiria el segundo articulo.</p>
+        <article>
+            <p>
+                En la página web sobre el Nissan Patrol, se aplicaron las siguientes técnicas:
+                <br><br>
+
+                <strong>Estructura HTML:</strong>
+                <br>
+                Se utilizó HTML5 para estructurar el contenido de la página. Se dividió en secciones como encabezado, barra de navegación, contenido principal, contenido lateral y pie de página. Se añadieron imágenes en la sección del encabezado, utilizando la etiqueta &lt;img&gt;. Cada imagen se le asignó una clase específica para poder aplicar estilos de alineación en CSS.
+                <br><br>
+                <strong>Estilización con CSS3:</strong>
+                <br>
+                Se empleó CSS para dar estilo a la página. Se creó un archivo de estilos (Style.css) que se enlazó al documento HTML. Para alinear las imágenes en el encabezado a la izquierda y derecha, se usaron clases como .logo-left y .logo-right con propiedades de estilo como float: left y float: right, respectivamente. Se diseñó el contenido lateral (aside) con un fondo de color gris claro y se utilizó la propiedad display: flex con align-items: center y justify-content: center para centrar dinámicamente el GIF, permitiendo que se redimensione automáticamente con el cambio del tamaño de la ventana del navegador.
+                <br><br>
+                <strong>Enfoque Responsivo:</strong>
+                <br>
+                Se aplicaron propiedades CSS como max-width: 100% y max-height: 100% en la clase .gift-aside para asegurar que el GIF se ajustara dentro del aside sin desbordarse, permitiendo que mantenga sus proporciones y se redimensione según el espacio disponible.
+                <br><br>
+                <strong>Compatibilidad con Diferentes Tamaños de Pantalla:</strong>
+                <br>
+                El diseño se adaptó para responder a diferentes tamaños de pantalla. Por ejemplo, las imágenes del encabezado se configuraron para ajustarse y mantener su posición relativa al tamaño del contenedor del encabezado.
+
+                Este enfoque combina HTML5 para la estructura del contenido con CSS3 para el diseño y la presentación, permitiendo que la página se adapte y sea más flexible al redimensionar la ventana del navegador, lo que asegura una mejor experiencia del usuario en diferentes dispositivos y tamaños de pantalla.
+            </p>
         </article>
+        <br><br><br>
     </section>
 
-    <!-- Contenido externo de la pagina -->
-    <aside> 
-        <img class="gift-aside" src="img/jump.gif" />
+    <!-- Contenido lateral -->
+    <aside>
+        <img class="gift-aside" src="img/jump.gif" alt="Animación GIF en el aside">
     </aside>
 
     <!-- Pie de pagina -->

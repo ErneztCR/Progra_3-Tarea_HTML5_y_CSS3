@@ -1,32 +1,40 @@
-﻿* {
+﻿/* Estilos de reseteo y configuración global */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos generales del cuerpo */
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     background-color: #f5f5f5;
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical si el contenido es más grande que la ventana */
 }
 
+/* Encabezado */
 header {
-    overflow: hidden; /* Establece un contexto para flotar los elementos internos */
+    overflow: hidden; /* Crea un contexto para los elementos flotantes internos */
+}
+
+/* Estilos de las imágenes en el encabezado */
+.logo-left,
+.logo-right {
+    width: 20%; /* Ancho para ambas imágenes */
+    margin: 1em; /* Añade espacio entre las imágenes y el borde de la ventana */
 }
 
 .logo-left {
     float: left;
-    width: 20%; /* Ancho de la imagen izquierda */
-    margin-left: 1em; /* Añade margen a la izquierda para separarla del borde de la ventana */
 }
 
 .logo-right {
     float: right;
-    width: 20%; /* Ancho de la imagen derecha */
-    margin-right: 1em; /* Añade margen a la izquierda para separarla del borde de la ventana */
-    margin-top: 6%; /* Añade margen a la parte superior para separarla del borde de la ventana */
+    margin-top: 6%; /* Añade espacio superior para separarla del borde de la ventana */
 }
 
+/* Barra de navegación */
 nav {
     background-color: #374E8E;
     text-align: center;
@@ -43,10 +51,11 @@ nav {
             color: red;
         }
 
+/* Contenido principal */
 section {
     float: left;
     height: auto;
-    margin: 0 0.5em 0 0.5em;
+    margin: 0 0.5em;
     width: 60%;
 }
 
@@ -60,6 +69,7 @@ p {
     text-align: justify;
 }
 
+/* Contenido lateral (aside) */
 aside {
     background-color: lightgray;
     display: flex;
@@ -68,19 +78,23 @@ aside {
     width: 37.5%;
     align-items: center;
     justify-content: center;
-    height: 200px; /* Establece la altura deseada del área del aside */
+    height: 20em; /* Establece la altura deseada del área del aside */
 }
 
-/* Estilos para la imagen GIF dentro del aside */
+/* Estilos de la imagen GIF dentro del aside */
 .gift-aside {
-    max-width: 100%; /* Asegura que la imagen no se desborde del área del aside */
-    max-height: 100%; /* Asegura que la imagen no se desborde del área del aside */
+    max-width: 100%; /* Asegura que la imagen no desborde el área del aside */
+    max-height: 100%; /* Asegura que la imagen no desborde el área del aside */
+}
+
+main {
+    margin-bottom: 6em; /* Ajusta el margen inferior para evitar superposición con el footer */
 }
 
 footer {
     background-color: #374E8E;
     bottom: 0;
-    padding: 1em 0 1em 0;
+    padding: 1em 0;
     position: fixed;
     width: 100%;
 }
